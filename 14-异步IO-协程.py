@@ -21,4 +21,45 @@ print(next(g))
 print(next(g))
 print(next(g))
 print(next(g))
-print(next(g))
+
+### 在执行过程中，遇到yield就中断，下次又继续执行。执行3次yield后，已经没有yield可以执行了，所以，第4次调用next(o)就报错
+def odd():
+    print('step 1')
+    yield 1
+    print('step 2')
+    yield(3)
+    print('step 3')
+    yield(5)
+	
+o = odd()
+next(o)
+next(o)
+next(o)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
