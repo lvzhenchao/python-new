@@ -28,6 +28,18 @@ dic = {'a': 100, 'b':23}
 list5 = list(dic)
 print(list5)
 
+## 列表添加元素
+### append() 追加
+l = ['java','python']
+l.append('php')
+print(l)
+### extend方法
+l.extend('c')
+print(l)
+### insert()可以在列表中间某个位置插入元素
+l.insert(1,'golang')
+print(l)
+
 
 
 
